@@ -1,6 +1,10 @@
 <?php
-require_once('func.php');
+require('func.php');
 $digits = $_POST['digits'];
-$answer = finder($digits);
-echo "У числа <strong> '$answer' </strong> есть дубликаты!";
+$answer = finder(split($digits));
+if ($answer != ''){ 
+    echo "У числа <strong> '$answer' </strong> есть дубликаты!";}
+else{
+    echo 'Дубликатов нету!';
+}
 ?>
