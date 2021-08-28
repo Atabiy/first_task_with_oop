@@ -1,0 +1,1 @@
+To use this app, you should start the file named 'start_it.php'. 
