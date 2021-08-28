@@ -4,7 +4,6 @@ function shower(array $array){
         echo "$item<br>";
     }
 }
-
 function split(string $string){
     $array = []; $digit = ''; $string = $string.' ';
     for ($i = 0; $i < strlen($string); $i++){
