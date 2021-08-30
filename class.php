@@ -8,7 +8,7 @@ class finder{
     }
     private function split(){
         //This function makes array from user's string
-        $array = []; $digit = ''; $this -> string_from_form = string_from_form.' ';
+        $array = []; $digit = ''; $this -> string_from_form .= ' ';
         for ($i = 0; $i < strlen($this -> string_from_form); $i++){
             if ($this ->string_from_form[$i] != ' '){         
                 $digit = $digit.$this -> string_from_form[$i];}
