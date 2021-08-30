@@ -1,10 +1,13 @@
 <?php
-require('func.php');
+require('class.php');
 $digits = $_POST['digits'];
-$answer = finder(split($digits));
-if ($answer != ''){ 
-    echo "У числа <strong> '$answer' </strong> есть дубликаты!";}
+$answer = new finder;
+$answer -> find_dublicate($digits);
+$a = $answer -> answer;
+echo $a
+/*if (($answer -> answer) != ''){ 
+    echo "У числа <strong> '$answer -> answer' </strong> есть дубликаты!";}
 else{
     echo 'Дубликатов нету!';
-}
+}*/
 ?>
